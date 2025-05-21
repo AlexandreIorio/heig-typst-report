@@ -50,8 +50,8 @@ int main() {
 ```
 
 // Citations
-#quote(attribution: [Etienne 2024])[
-  Non mais aujourd'hui, avec la technologie, c'est plus comme avant. Pa'c'qua l'époque nous...
+#quote(attribution: [L. Ipsum 2024])[
+  #lorem(50)
 ]
 
 = #lorem(2)
