@@ -31,3 +31,15 @@ git clone git@github.com:AlexandreIorio/heig-typst-report.git
 ```
 
 4. Bon courage pour ton rapport !
+
+## Infos utiles
+
+La police de texte utilisée est `Segoe UI`, qui est installée par défaut sur Windows.
+La police de code utilisée est `Consolas`, qui est installée par défaut sur Windows.
+
+Ces polices sont utilisées pour coller au style de `Markdown`, mais tu peux les changer dans le fichier `style.typ` si tu le souhaites.
+
+## Contribution
+
+N'hésite pas à apporter ta contribution à ce template en proposant des améliorations ou en signalant des problèmes. Tu peux le faire en ouvrant une issue ou en soumettant une pull request sur GitHub.
+
