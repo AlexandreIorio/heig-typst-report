@@ -1,4 +1,4 @@
-#import "template/template.typ": apply_template
+#import "template.typ": apply_template
 #import "@preview/note-me:0.5.0": *
 
 
