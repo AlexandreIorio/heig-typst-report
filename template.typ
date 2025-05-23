@@ -1,5 +1,6 @@
 #import "style.typ": apply_style
 
+
 #let header_and_footer_color = rgb("#afafaf")
 #let header_and_footer_font_size = 8pt
 #let logo_path = "heig-vd.png"

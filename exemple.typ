@@ -29,7 +29,7 @@
 // Text italic
 _#lorem(30)_
 
-// Notes
+// Notes -> needs to be imported #import "@preview/note-me:<version>": *
 #note[
   Note
 ]
