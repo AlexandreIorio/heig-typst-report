@@ -2,6 +2,7 @@
 
 #let header_and_footer_color = rgb("#afafaf")
 #let header_and_footer_font_size = 8pt
+#let logo_path = "heig-vd.png"
 
 
 #let apply_template(
@@ -23,7 +24,7 @@
   place(
     top + left,
     image(
-      "./img/heig-vd.png",
+      logo_path,
       width: 30%,
       fit: "contain",
     ),
@@ -68,7 +69,7 @@
       #set text(header_and_footer_font_size, fill: header_and_footer_color)
       #grid(
         columns: (1fr, 1fr),
-        image("img/heig-vd.png", width: 30%, fit: "contain"), align(right, course + "\n" + date),
+        image(logo_path, width: 30%, fit: "contain"), align(right, course + "\n" + date),
       )
       #line(length: 100%, stroke: 0.5pt + header_and_footer_color)
     ],
