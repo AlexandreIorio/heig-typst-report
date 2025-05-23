@@ -1,9 +1,0 @@
-[package]
-name = "heig-report-template"
-version = "0.1.0"
-entry = "template.typ"
-authors = ["alexandre.iorio@outlook.com"]
-description = "Ce template est conçu pour faciliter la rédaction de rapports de laboratoires et de projets des cours de TIC de la HEIG-VD."
-
-[template]
-path = "template.typ"
