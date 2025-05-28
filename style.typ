@@ -108,12 +108,4 @@
   contenu
 }
 
-#let emphasis(content) = {
-  set text(font: font, style: "italic")
-  rect(
-    content,
-    fill: emphasis_color,
-    radius: 5pt,
-  )
-}
 
