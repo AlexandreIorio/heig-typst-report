@@ -35,12 +35,12 @@
     center + horizon,
     block[
       #set text(size: 24pt)
-      
-        #text[
-          Laboratoire n° #lab_num \
-          #lab_title \
-        ]
-      
+
+      #text[
+        Laboratoire n° #lab_num \
+        #lab_title \
+      ]
+
 
       #set text(size: 18pt)
       #text[
@@ -103,6 +103,39 @@
   )
   outline(title: [Table des matières])
   pagebreak()
+
   content
 }
+
+#let table_with_header(body) = {
+  set table(
+    stroke: (x, y) => {
+      if y == 0 {
+        (bottom: 1.2pt + rgb("#ffffff"), right: 0.5pt + rgb("#ffffff"))
+      } else {
+        (bottom: 0.5pt + rgb("#ffffff"), right: 0.5pt + rgb("#ffffff"))
+      }
+    },
+    fill: (x, y) => {
+       if y == 0 or x == 0{
+        gray 
+      } else {
+        rgb("#e0e0e0")
+      }
+    },
+  )
+  show table.cell: it => {
+    if it.x == 0 or it.y == 0 {
+      set text(white)
+      strong(it)
+    } else {
+      set text(black)
+      it
+    }
+  }
+
+  body
+}
+
+
 
