@@ -1,4 +1,4 @@
-#import "template.typ": apply_template
+#import "template.typ": *
 #import "@preview/note-me:0.5.0": *
 
 
@@ -54,4 +54,30 @@ int main() {
   #lorem(50)
 ]
 
+#pagebreak()
+
 = #lorem(2)
+
+#let my_table = table(
+  columns: 2,
+  align: (left, right),
+  table.header(
+    [Fruit], [Quantité],
+  ),
+  [Pommes], [10],
+  [Bananes], [5],
+  [Oranges], [20],
+  [Poires], [5],
+  [Cerises], [20],
+)
+
+
+*base typst table*
+#my_table
+
+*With `table_with_header()` function*
+#table_with_header(my_table)
+
+*Sum of column function*
+
+Number of fruits : #sum_of_columns(table:my_table, col_index:2)

@@ -107,6 +107,20 @@
   content
 }
 
+#let sum_of_columns(table:table, col_index:int) = {
+  let sum = 0
+  let i = 0
+  let nb_col = table.columns
+  for row in table.children {
+    if (i == col_index) {
+      i = 0
+      sum = sum + int(row.body.text)
+    }
+    i = i + 1
+  }
+  return sum
+}
+
 #let table_with_header(body) = {
   set table(
     stroke: (x, y) => {
